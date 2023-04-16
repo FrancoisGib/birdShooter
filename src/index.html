@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr">
+
+<head>
+   <meta charset="UTF-8" />
+   <title>Tir à l'arc</title>
+   <meta name="author" content="Gibier François" />
+   <link rel="stylesheet" type="text/css" href="./style/style.css" />
+</head>
+
+<body>
+   <h2>Tir à l'arc</h2>
+   <p>
+      Tirez sur les cibles pour gagner des points,
+      récupérez les flèches (cinq à la fois),
+      attention aux oiseaux.
+   </p>
+   <p id="reload"></p>
+
+   <div id="game">
+      <div id="info">
+         <div id="scoreZone">
+            <div id="score"> 0 </div>pts
+         </div>
+         <div id="arrows">
+            <img src="./images/fleches.png" /> : <span id="nbArrows">0</span>
+         </div>
+         <div id="loaders" style="display: None">
+            <img src="./images/loaderQ.png" /> : <span id="nbLoaders">0</span>
+         </div>
+         <div id="lifes">
+            <img src="./images/arc.png" alt="" id="life-1" />
+            <img src="./images/arc.png" alt="" id="life-2" />
+            <img src="./images/arc.png" alt="" id="life-3" />
+         </div>
+
+         <div id="control">
+            <button id="stopAndStartGame">Play</button>
+            <button id="ak-47">AK-47</button>
+            <label>Sound : <button id="sound">On</button></label>
+         </div>
+      </div>
+      <div id="field">
+         <canvas id="playfield" width="500" height="580" tabindex="1"></canvas>
+      </div>
+   </div>
+   <div id="background-selector"><h1>Background : </h1></div>
+</body>
+
+</html>
